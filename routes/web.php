@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'MainController@index')->name('home');
+Route::get('/home', 'MainController@updateTable')->name('home');
